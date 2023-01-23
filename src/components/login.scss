@@ -1,0 +1,71 @@
+.fDiv {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 440px) {
+        height: 90vh;
+    }
+}
+.container {
+    width: 400px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: centere;
+    padding: 50px 10px 30px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(84, 118, 210);
+
+    @media (max-width: 440px) {
+        width: 320px;
+        height: 60%;
+    }
+    > p {
+        color: #fff;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 0 5px;
+    }
+    .vpn {
+        font-size: 18px;
+        span {
+            color: rgb(140, 2, 2);
+            font-size: 22px;
+        }
+    }
+
+    .googleBtn {
+        width: 225px;
+        height: 41px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: rgb(46, 130, 73);
+        border-radius: 3px;
+        box-shadow: 0 2px 12px rgba(5, 5, 5, 0.718);
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(37, 150, 73);
+            transform: translateY(-3px);
+        }
+        img {
+            width: 34px;
+            height: 34px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        p {
+            text-transform: capitalize;
+            font-size: 15px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
